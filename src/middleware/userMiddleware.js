@@ -44,7 +44,7 @@ const authToken = function (req, res, next) {
         } else {
             
             let decodeToken = jwt.decode(token[1], '22nd-Dec-Project-Product')
-            console.log('lne 26' , decodeToken)
+            //console.log('lne 26' , decodeToken)
             if (decodeToken) {
                 req.userId = decodeToken.userId
                 next()
